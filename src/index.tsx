@@ -251,7 +251,7 @@ const StepIndicator = ({
     }
     var labelViews = labels.map((label, index) => {
       const selectedStepLabelStyle =
-        index === currentPosition
+        index <= currentPosition
           ? { color: customStyles.currentStepLabelColor }
           : { color: customStyles.labelColor };
       return (
