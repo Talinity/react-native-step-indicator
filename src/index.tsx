@@ -70,7 +70,7 @@ const defaultStyles: DefaultStepIndicatorStyles = {
   stepIndicatorLabelFontSize: 15,
   currentStepIndicatorLabelFontSize: 15,
   stepIndicatorLabelCurrentColor: '#000000',
-  stepIndicatorLabelFinishedColor: '#ffffff',
+  stepIndicatorLabelFinishedColor: 'rgb(0,168,155)',
   stepIndicatorLabelUnFinishedColor: 'rgba(255,255,255,0.5)',
   labelColor: '#000000',
   labelSize: 13,
@@ -347,9 +347,9 @@ const StepIndicator = ({
           backgroundColor: customStyles.stepIndicatorUnFinishedColor,
           borderWidth: customStyles.stepStrokeWidth,
           borderColor: customStyles.stepStrokeUnFinishedColor,
-          height: staleSizeAnim,
-          width: staleSizeAnim,
-          borderRadius: customStyles.stepIndicatorSize / 2,
+          height: 13,
+          width: 13,
+          borderRadius: 13 / 2,
           overflow: 'hidden',
         };
         indicatorLabelStyle = {
